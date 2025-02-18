@@ -1,0 +1,101 @@
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box /* Ajusta el modelo de caja, determinando el ancho, alto y pading */
+}
+
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif; /* Define la fuente del texto */
+    background-color: #f4f7fc;  /* Color de fondo */
+    display: flex; /* Flexbox para centrar el contenido */ 
+    justify-content: center; /* Centra el contenido horizontalmente */    
+    align-items: center; /* Centra el contenido verticalmente */
+    height: 100vh; /* 100% del alto de la ventana */
+}
+
+/* Contenedor del formulario de login */
+.login-container {
+    background-color: #fff; /* Color de fondo */
+    padding: 30px;  /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    width: 100%; /* Ancho del 100% */
+    max-width: 400px; /* Ancho máximo */
+}
+
+.logo {
+    height: 50px; /* Ajusta el tamaño del logo */
+    margin-left: 15px; /* Espacio entre el título y el logo */
+}
+
+h2 {
+    text-align: center; /* Alineación del texto */
+    margin-bottom: 20px; /* Espaciado inferior */
+    color: #333; /* Color del texto */
+}
+
+/* Estilos del formulario */
+.login-form {
+    display: flex; /* Flexbox para alinear los elementos */
+    flex-direction: column; /* Alineación de los elementos en columna */    
+}
+
+/* Estilos de los campos de entrada */
+.input-group {
+    margin-bottom: 15px; /* Espaciado inferior */
+}
+
+label {
+    font-size: 0.9rem; /* Tamaño de la fuente */
+    color: #333; /* Color del texto */
+    margin-bottom: 5px; /* Espaciado inferior */
+}
+
+input[type="text"], 
+input[type="password"] {
+    width: 100%; /* Ancho del 100% */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ddd; /* Borde del campo de entrada */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de la fuente */
+    outline: none; /* Elimina el borde alrededor del campo de entrada */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff; /* Color del borde al hacer foco */
+}
+
+/* Estilo del botón de login */
+.login-btn {
+    padding: 12px; /* Espaciado interno */
+    background-color: #007bff; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de la fuente */
+    cursor: pointer; /* Cursor al pasar el ratón */
+    transition: background-color 0.3s ease; /* Transición al pasar el ratón */
+}
+
+.login-btn:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el ratón */
+}
+
+/* Estilo del enlace de contraseña olvidada */
+.forgot-password {
+    text-align: center; /* Alineación del texto */
+    margin-top: 10px; /* Espaciado superior */
+}
+
+.forgot-password a {
+    color: #007bff; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 0.9rem; /* Tamaño de la fuente */
+}
+
+.forgot-password a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}
